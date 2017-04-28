@@ -27,3 +27,12 @@ describe('the index/word list path', {:type => :feature}) do
     expect(page).to have_content('Enter a New Definition Here:')
   end
 end
+
+describe('the add a definition path', {:type => :feature}) do
+  it('processes the user entry and adds a new definition to the definition list') do
+    visit('/word/1')
+    fill_in('definition', :with => 'Burning ball of gas')
+    click_button('Add Definition')
+    expect(page).to have_content('Burning ball of gas')
+  end
+end
