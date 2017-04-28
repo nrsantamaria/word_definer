@@ -7,10 +7,8 @@
 
 <ul>
 <% @words.each do |word| %>
-  <li><%= word.word_name %></li>
+  <li><a href="/word/<%=word.id%>"><%= word.word_name %></a></li>
 <% end %>
 </ul>
 
-<a href="/word">Test Word</a>
-
-<a href="/word_form">Add a Word</a>
+<a href="/word_form" class="btn btn-default">Add a Word</a>

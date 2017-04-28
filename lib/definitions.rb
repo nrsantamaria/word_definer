@@ -1,4 +1,4 @@
-class Definitions
+class Definition
 
   attr_accessor :definition
 
@@ -8,7 +8,7 @@ class Definitions
     self.definition = definition
   end
 
-  def Definitions.all
+  def Definition.all
     @@definitions
   end
 
@@ -16,7 +16,7 @@ class Definitions
     @@definitions.push(self)
   end
 
-  def Definitions.clear
+  def Definition.clear
     @@definitions = []
   end
 end
