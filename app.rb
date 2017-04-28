@@ -23,6 +23,12 @@ get('/words_after_add') do
   erb(:index)
 end
 
+get('/words_clear') do
+  Word.clear
+  @words = Word.all
+  erb(:index)
+end
+
 get('/word_form') do
   erb(:word_form)
 end
@@ -40,4 +46,10 @@ get('/word/:id/add') do
     @word.add_definitions(@definition)
   end
   erb(:word)
+end
+
+get('/definitions_clear') do
+  Definition.clear
+  @definitions = Definition.all
+  redirect('/word/:id')
 end
