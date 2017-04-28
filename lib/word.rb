@@ -21,4 +21,8 @@ class Word
   def Word.clear
     @@words = []
   end
+
+  def add_definitions(definition)
+    @definitions.push(definition)
+  end
 end

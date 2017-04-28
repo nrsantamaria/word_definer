@@ -2,6 +2,7 @@ require('rspec')
 require('word')
 
 describe(Word) do
+
   before do
     Word.clear
   end
@@ -34,6 +35,14 @@ describe(Word) do
       test_word2 = Word.new('Star')
       test_word2.save()
       expect(Word.all()).to(eq([test_word, test_word2]))
+    end
+  end
+
+  describe('#add_definitions') do
+    it('will add definitions to an array') do
+      test_word = Word.new('Asteroid')
+      test_word.add_definitions('space rock')
+    expect(test_word.definitions()).to(eq(['space rock']))
     end
   end
 end

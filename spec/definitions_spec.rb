@@ -2,12 +2,18 @@ require('rspec')
 require('definitions')
 
 describe(Definitions) do
+
+  before do
+    Definitions.clear
+  end
+
   describe('#initialize') do
     it('will create a new instance of a definition') do
       test_definition = Definitions.new('space rock')
       expect(test_definition.definition()).to(eq('space rock'))
     end
   end
+  
   describe('#save_definition') do
     it('will save all definitions to an array') do
       test_definition = Definitions.new('space rock')
