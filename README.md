@@ -1,4 +1,4 @@
-# _Kid Dictionary_
+# _Word Definer_
 
 #### _This app will allow users to add words and custom definitions to each word, Friday, April 28, 2017_
 
@@ -23,14 +23,14 @@ _This app will collect a words from the user and allow them to add multiple defi
 ## Setup/Installation Requirements
 
 * _Ensure connection to the Internet_
-* _Enter the following URL in your computer browser to access the active git hub link to this page: https://nrsantamaria.github.io/kid_dictionary/_
+* _Enter the following URL in your computer browser to access the active git hub link to this page: https://nrsantamaria.github.io/word_definer/_
 * _OR_
 * _On a mac using spotlight search type in terminal_
 * _Once in terminal run the command: cd desktop_
-* _Run the command: git clone https://github.com/nrsantamaria/kid_dictionary.git_
-* _Run the command: cd kid_dictionary_
+* _Run the command: git clone https://github.com/nrsantamaria/word_definer.git_
+* _Run the command: cd word_definer_
 * _Run the command: atom ._
-* _This will open all of the files included in the kid_dictionary folder including Gemfile, Gemfile.lock, dictionarylist.txt, app.rb, README.md, views folder, spec folder, public folder, lib folder_
+* _This will open all of the files included in the word_definer folder including Gemfile, Gemfile.lock, dictionarylist.txt, app.rb, README.md, views folder, spec folder, public folder, lib folder_
 * _To make changes to the text on the page that the user will see you will need to access the index.erb file._
 * _To make changes to the look of the file you will need to access the styles.css file._
 * _To make changes to the functions of the form you will need to access the word.rb file or definitions.rb file._

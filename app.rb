@@ -29,6 +29,12 @@ get('/words_clear') do
   erb(:index)
 end
 
+get('/words_sorted') do
+  Word.sort
+  @words = Word.all
+  erb(:index)
+end
+
 get('/word_form') do
   erb(:word_form)
 end

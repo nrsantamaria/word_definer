@@ -2,16 +2,19 @@
   <h1>My Dictionary</h1>
 </div>
 <div class="container">
-  <h3>Are there some words you want to learn? This site will help you collect all the words you want to learn. Then you can add some definitions to each word based on what you know.</h3>
+  <h3>Are there some words that you don't know the meanings of? This site will help you collect all those words and add some definitions when you learn them. Soon you will know what all the words mean and you can clear your list!</h3>
   <h2>Word List</h2>
-  <h4>Click on the words listed below to <strong>view</strong> or <strong>add definition(s)</strong> to a word. Otherwise click on the <strong>Add a Word</strong> button to add to the list.</h4>
-
+  <h4>Click on the <strong id='green-bold'>Add a Word</strong> button to add to the list. Then click on the words listed below to <em>view</em> or <em>add definition(s)</em> to a word.</h4>
+  <h4>If your list gets long and you want to sort them click on the <strong id='blue-bold'>Sort Words</strong> button.</h4>
+  <h4>When you are ready to clear your list click on the <strong id='red-bold'>Remove Words</strong> button <em>(Be careful! You won't be able to get these words or definitions for them back!)</em>. </h4>
+  <hr>
   <ul>
   <% @words.each do |word| %>
     <li><a href="/word/<%=word.id%>"><%= word.word_name %></a></li>
   <% end %>
   </ul>
-
+  <hr>
   <a href="/word_form" class="btn btn-success">Add a Word</a>
+  <a href="/words_sorted" class="btn btn-info">Sort Words</a>
   <a href="/words_clear" class="btn btn-danger">Remove Words</a>
 </div>

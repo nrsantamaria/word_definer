@@ -8,8 +8,9 @@ body h1, h2 {
 }
 
 .jumbotron h1 {
-  padding-left: 8.5%;
+  text-align: center;
   color: white;
+  font-size: 72px;
 }
 
 body {
@@ -17,8 +18,17 @@ body {
   font-size: 16px;
 }
 
-strong {
+
+#green-bold {
+  color: #A7CC20
+}
+
+#blue-bold {
   color: #41C0FF;
+}
+
+#red-bold {
+  color: #FF4F3A
 }
 
 .btn {

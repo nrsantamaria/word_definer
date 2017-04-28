@@ -37,6 +37,23 @@ describe('the add a definition path', {:type => :feature}) do
   end
 end
 
+describe('the add a word path', {:type => :feature}) do
+  it('processes the user entry and adds another new word to the word list') do
+    visit('/word_form')
+    fill_in('word', :with => 'Asteroid')
+    click_button('Add Word')
+    expect(page).to have_content('Asteroid')
+  end
+end
+
+describe('the sort words path', {:type => :feature}) do
+  it('has a link that will allow users to sort words') do
+    visit('/')
+    click_link('Sort Words')
+    expect(page).to have_content('Asteroid')
+  end
+end
+
 describe('the remove words path', {:type => :feature}) do
   it('has a link that will allow users to remove words') do
     visit('/')
