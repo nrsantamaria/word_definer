@@ -5,15 +5,20 @@ also_reload('lib/**/*.rb')
 require('pry')
 
 get('/') do
-  @word = Word.all
+  @words = Word.all
   erb(:index)
 end
 
-post('/') do
-  @word_name = params.fetch('word')
-  new_word = Word.new(@word_name)
-  new_word.save
-  @word = Word.all
+post('/words_after_add') do
+  @word = params.fetch('word')
+  new_word = Word.new(@word)
+  new_word.save()
+  @words = Word.all
+  erb(:index)
+end
+
+get('/words_after_add') do
+  @words = Word.all
   erb(:index)
 end
 
@@ -21,6 +26,7 @@ get('/word_form') do
   erb(:word_form)
 end
 
-get('/word') do
+get('/word/:id') do
+  @word = Word.find(params.fetch('id').to_i())
   erb(:word)
 end

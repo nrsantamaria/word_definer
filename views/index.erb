@@ -4,6 +4,13 @@
 
 <h2>Word List</h2>
 <h5>Click on the words listed below to see or add definition(s) to a word. Otherwise click on the Add a Word button to add to the list.</h5>
+
+<ul>
+<% @words.each do |word| %>
+  <li><%= word.word_name %></li>
+<% end %>
+</ul>
+
 <a href="/word">Test Word</a>
 
 <a href="/word_form">Add a Word</a>
