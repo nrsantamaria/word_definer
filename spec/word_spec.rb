@@ -20,4 +20,13 @@ describe(Word) do
       expect(test_word.definitions()).to(eq([]))
     end
   end
+  describe('#save') do
+    it('will add new words to an array') do
+      test_word = Word.new('Asteroid')
+      test_word.save()
+      test_word2 = Word.new('Star')
+      test_word2.save()
+      expect(Word.all()).to(eq([test_word, test_word2]))
+    end
+  end
 end
