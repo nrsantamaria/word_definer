@@ -47,9 +47,3 @@ get('/word/:id/add') do
   end
   erb(:word)
 end
-
-get('/definitions_clear') do
-  Definition.clear
-  @definitions = Definition.all
-  redirect('/word/:id')
-end

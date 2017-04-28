@@ -1,9 +1,15 @@
 body h1, h2 {
   font-family: 'Baloo', cursive;
+  color: #1C80B2;
 }
 
-body h1{
+.jumbotron {
+  background-color: #41C0FF;
+}
+
+.jumbotron h1 {
   padding-left: 8.5%;
+  color: white;
 }
 
 body {
@@ -11,9 +17,26 @@ body {
   font-size: 16px;
 }
 
+strong {
+  color: #41C0FF;
+}
+
 .btn {
   display: block;
   margin: auto;
   width: 150px;
   margin-top: 10px;
+  border: 0;
+}
+
+.btn-success {
+  background-color: #A7CC20;
+}
+
+.btn-danger {
+  background-color: #FF4F3A;
+}
+
+.btn-info {
+  background-color: #41C0FF;
 }
