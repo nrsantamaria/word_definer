@@ -42,7 +42,17 @@ describe(Word) do
     it('will add definitions to an array') do
       test_word = Word.new('Asteroid')
       test_word.add_definitions('space rock')
-    expect(test_word.definitions()).to(eq(['space rock']))
+      expect(test_word.definitions()).to(eq(['space rock']))
+    end
+  end
+
+  describe('.find') do
+    it('will find the word based on their id') do
+      test_word = Word.new('Asteroid')
+      test_word.save()
+      test_word2 = Word.new('Star')
+      test_word2.save()
+      expect(Word.find(1)).to(eq(test_word))
     end
   end
 end

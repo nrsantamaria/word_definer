@@ -25,4 +25,14 @@ class Word
   def add_definitions(definition)
     @definitions.push(definition)
   end
+
+  def Word.find(id)
+    found_word = nil
+    @@words.each do |word|
+      if word.id == id
+        found_word = word
+      end
+    end
+    found_word
+  end
 end
