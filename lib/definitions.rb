@@ -8,5 +8,11 @@ class Definitions
     self.definition = definition
   end
 
-  
+  def Definitions.all
+    @@definitions
+  end
+
+  def save_definition
+    @@definitions.push(self)
+  end
 end
