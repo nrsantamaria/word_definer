@@ -36,3 +36,11 @@ describe('the add a definition path', {:type => :feature}) do
     expect(page).to have_content('Burning ball of gas')
   end
 end
+
+describe('the remove words path', {:type => :feature}) do
+  it('has a link that will allow users to remove words') do
+    visit('/')
+    click_link('Remove Words')
+    expect(page).to have_content('Add a Word')
+  end
+end
