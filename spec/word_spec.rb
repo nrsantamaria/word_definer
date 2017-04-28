@@ -14,4 +14,10 @@ describe(Word) do
       expect(test_word.id()).to(eq(1))
     end
   end
+  describe('#initialize') do
+    it('will add create an empty array of definitions for the new word') do
+      test_word = Word.new('Asteroid')
+      expect(test_word.definitions()).to(eq([]))
+    end
+  end
 end
