@@ -37,7 +37,7 @@ _This app will collect a words from the user and allow them to add multiple defi
 
 ## Known Bugs
 
-_???_
+_No known bugs._
 
 ## Support and contact details
 

@@ -55,4 +55,15 @@ describe(Word) do
       expect(Word.find(1)).to(eq(test_word))
     end
   end
+
+  describe('.sort') do
+    it('will sort the words') do
+      test_word = Word.new('Star')
+      test_word.save()
+      test_word2 = Word.new('Asteroid')
+      test_word2.save()
+      Word.sort
+      expect(Word.all()).to(eq([test_word2, test_word]))
+    end
+  end
 end

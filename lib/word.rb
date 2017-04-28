@@ -35,4 +35,8 @@ class Word
     end
     found_word
   end
+
+  def Word.sort
+    @@words.sort! { |a,b| a.word_name <=> b.word_name }
+  end
 end
