@@ -17,4 +17,8 @@ class Word
   def save
     @@words.push(self)
   end
+
+  def Word.clear
+    @@words = []
+  end
 end
