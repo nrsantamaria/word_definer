@@ -25,6 +25,8 @@ _This app will collect a words from the user and allow them to add multiple defi
 * _Ensure connection to the Internet_
 * _Enter the following URL in your computer browser to access the active git hub link to this page: https://nrsantamaria.github.io/word_definer/_
 * _OR_
+* _Enter the following URL in your computer browser to access the active heroku link to this page: https://_
+* _OR_
 * _On a mac using spotlight search type in terminal_
 * _Once in terminal run the command: cd desktop_
 * _Run the command: git clone https://github.com/nrsantamaria/word_definer.git_
