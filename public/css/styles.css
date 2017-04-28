@@ -1,5 +1,18 @@
+body h1, h2 {
+  font-family: 'Baloo', cursive;
+}
+
+body h1{
+  padding-left: 5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .btn {
   display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
+  margin-top: 10px;
 }
