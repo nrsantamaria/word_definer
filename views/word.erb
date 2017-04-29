@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>Word: <%= @word.word_name %></h1>
+</div>
+<div class="container">
+  <h2>Definitions:</h2>
+  <ul>
+  <% @word.definitions.each do |definition| %>
+    <li><%= definition.definition() %></a></li>
+  <% end %>
+  </ul>
+
+  <h2>Add Definition(s):</h2>
+  <form action="/word/<%= @word.id%>/add">
+    <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
+    <div class="form-group">
+      <label for="definition">Enter a New Definition Here:</label>
+      <input type="text" name="definition" class="form-control">
+    </div>
+    <button type="submit" name="definition-button" class="btn btn-success">Add Definition</button>
+  </form>
+  <a href="/" class="btn btn-info">Word List</a>
+</div>
