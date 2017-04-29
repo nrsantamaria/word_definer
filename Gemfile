@@ -1,5 +1,5 @@
 source("https://rubygems.org")
-ruby 2.2.2p95
+#ruby 2.2.2p95
 
 gem("sinatra")
 gem("sinatra-contrib")
