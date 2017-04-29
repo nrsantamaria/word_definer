@@ -1,5 +1,5 @@
 GEM
-#ruby 2.3.4
+#ruby 2.2.2
   remote: https://rubygems.org/
   specs:
     addressable (2.5.1)
